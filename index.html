@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="assets/css/main.css" />
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+		<script src="assets/js/jquery.base64.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script src="assets/js/height.js"></script>
+		<script src="assets/js/items.js"></script>
+	</head>
+	<body>
+		<!-- HEADER -->
+		<header id="header">
+			<section>
+				<img src="assets/img/logo.png" />
+				<section id="title">
+					<h1>Murderous Rampage</h1>
+					<h2><i>Obsessive Compulsive Killing</i></h2>
+				</section>
+			</section>
+			<section id="notifications"></section>
+		</header>
+		
+		<!-- LEFT SECTION -->
+		<section id="left"></section>
+		
+		<!-- MIDDLE SECTION -->
+		<section id="middle">
+			<img id="the-knife" src="assets/img/knife-0.png" />
+			<section id="kill-stats">
+				<p id="current-kills">0.0 Kills</p>
+				<p id="current-kills-ps">0.0 Kills Per Second</p>
+			</section>
+			<section id="exp-info">
+				<p id="level">Level 1</p>
+				<section id="exp-bar"></section>
+			</section>
+			<p id="kill-message">Your kills are not noteworthy enough yet!</p>
+		</section>
+		
+		<!-- RIGHT SECTION -->
+		<section id="right">
+			<nav>
+				<ul>
+					<li onclick="javascript: Killer.SwapMenu( 'statistics', 'menu' )"><p>Statistics</p></li>
+					<li onclick="javascript: Killer.SwapMenu( 'menu', 'statistics' )"><p>Main Menu</p></li>
+				</ul>
+			</nav>
+			<section id="upgrade-container"></section>
+			<aside id="popup">
+				<img class="popup-image-right" src="assets/img/no-image.png" />
+				<h2 class="popup-title-right">Title</h2>
+				<p class="popup-cost-right">0</p>
+				<p class="popup-text-right">Flavour Text</p>
+			</aside>
+			<section id="right-wrap">
+				<section id="statistics">
+					<h2>Statistics</h2>
+					<p id="stats-kills">Kills: 0.0</p>
+					<p id="stats-total-kills">All Time Kills: 0.0</p>
+					<p id="stats-clicks">Total Clicks: 0</p>
+					<p id="stats-kills-ps">Kills Per Second: 0.0</p>
+					<p id="stats-kills-pc">Kills Per Click: 1.0</p>
+					<p id="stats-items">Total Items: 0</p>
+					<hr />
+					<h2>Credits</h2>
+					<p id="version"></p>
+					<p>Inspired by <a href="http://orteil.dashnet.org/cookieclicker/">Cookie Clicker</a></p>
+					<br />
+					<p>Note: Item balance changes can and will happen, so your KPS may fluctuate between versions</p>
+					<hr />
+					<p>Unfortunately web servers cost money :(. If you liked my game please consider throwing some money my way &lt;3</p>
+					<section id="donate">
+						<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+							<input type="hidden" name="cmd" value="_s-xclick">
+							<input type="hidden" name="hosted_button_id" value="5ECVLENTVT66Q">
+							<input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online.">
+							<img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+						</form>
+					</section>
+				</section>
+				<section id="menu">
+					<h2>Main Menu</h2>
+					<section>
+						<img id="save" src="assets/img/save.png" />
+						<img id="load" src="assets/img/load.png" />
+						<img id="export" src="assets/img/export.png" />
+						<img id="reset" src="assets/img/reset.png" />
+					</section>
+					<section id="load-wrapper">
+						<form id="load-game">
+							<p>Load Game</p>
+							<input name="savestr" type="text" placeholder="Input save" />
+							<input type="submit" value="Submit" />
+						</form>
+					</section>
+					<section id="export-game">
+						<p>Copy &amp; save somewhere</p>
+						<section id="export-str"></section>
+					</section>
+				</section>
+			</section>
+		</section>
+		
+		<!-- FOOTER -->
+		<footer id="footer">
+			<p>Copyright &copy; Alluminous Designs 2014. All Rights Reserved.</p>
+		</footer>
+	</body>
+</html>

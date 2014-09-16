@@ -1,0 +1,44 @@
+0.0.1Pre-1 ( Nov 28 )
+- Added base for upgrade creation
+- Added knife progression
+- Added base for continuous number increaser
+ 
+0.0.1 ( Dec 2 )
+- Created design for game layout
+- Created HTML/CSS base for game layout
+
+0.0.2 ( Dec 13 )
+- Added height change functionality to automatically change height when browser height changes
+- Created JSON for items
+- Added dynamic item creation
+- Fixed CSS issues with item detail placement
+- Added function to append commas correctly to numbers ( http://stackoverflow.com/questions/2901102/how-to-print-a-number-with-commas-as-thousands-separators-in-javascript )
+
+0.0.3 ( Jan 9 )
+- Added in central clicking knife and functionality
+- Added width change functionality to keep knife in centre of page
+- Added base for item rewards
+
+0.0.4 ( Jan 16 )
+- Overhauled kill per second number increaser to be much more streamlined and accurate
+
+0.0.6 ( Feb 17 )
+- Added base for levelling system
+- Added base for kill-based fact snippets
+- Changed cost calculation into a straight line graph rather than a curve
+- Changed item cost numbers to be procedural of the last
+- Recalcluated base item reward values to be a percentage of the base cost
+- Levels now increase kills per second and kills per click relatively
+
+0.1.0 ( Mar 12 )
+- Added base functionality for statistics tab
+- Automated statistics tab
+- Implemented upgrade functionality
+- Implemented game reset
+- Implemented game autosaving
+- Implemented game manual loading
+- Implemented game save export
+
+0.1.1 ( Mar 18 )
+- Optimized JSON to speed up function execution time
+- Added version check on load
